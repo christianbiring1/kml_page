@@ -124,3 +124,25 @@ a {
     margin-bottom: 1rem;
   }
 }
+
+/* Icons */
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #00d9ff;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  background-color: gold;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
