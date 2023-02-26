@@ -132,7 +132,7 @@ a {
 .icon {
   width: 40px;
   height: 40px;
-  background-color: #00d9ff;
+  filter: invert(0.6);
 }
 
 .icon--small {
@@ -348,6 +348,15 @@ a {
 
 .nav__toggler {
   opacity: .5;
+}
+
+.hamburger_menu {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert(1);
 }
 
 .collapsible__content {
