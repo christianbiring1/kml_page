@@ -11,8 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="nav collapsible">
@@ -39,16 +39,21 @@
     </nav>
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <div class="hero__content">
+        <div class="hero__content" data-aos="fade-right">
           <h1>Kamole</h1>
           <p class="hero__tagline">Energy, Food security and Sustainability</p>
           <a href="" class="btn btn--outline btn-stretched">Join our mission</a>
         </div>
-        <img class="hero__image" src="images/kamole -logos_white.png" alt="" />
+        <img
+          class="hero__image"
+          src="images/kamole -logos_white.png"
+          alt=""
+          data-aos="zoom-in-left"
+        />
       </div>
     </section>
     <section class="block container">
-      <header class="block__header">
+      <header class="block__header" data-aos="slide-up">
         <h2>The problems that we want to solve</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed eius
@@ -56,7 +61,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <div class="icon-container">
             <span class="icon"></span>
           </div>
@@ -72,7 +77,12 @@
           </p>
           <a href="#" class="link-arrow">learn more</a>
         </div>
-        <img src="./images/kamole -logos.jpeg" alt="" class="feature__image" />
+        <img
+          src="./images/kamole -logos.jpeg"
+          alt=""
+          class="feature__image"
+          data-aos="zoom-in-left"
+        />
       </article>
       <article class="grid grid--1x2 feature">
         <div class="feature__content">
@@ -104,34 +114,43 @@
         <img src="./images/kamole -logos.jpeg" alt="" class="feature__image" />
       </article>
     </section>
-    <div class="card testimonial">
-      <div class="grid grid--1x2">
-        <div class="testimonial__image">
-          <img src="images/kamole -logos_black.png" alt="" />
-          <div class="icon-container icon-container--accent">
-            <span class="icon icon--small"></span>
-          </div>
-        </div>
-        <blockquote class="quote">
-          <p class="quote__text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ad
-            ab at perspiciatis officiis repellendus error, enim facere pariatur
-            obcaecati?
-          </p>
-          <div>
-            <div class="media">
-              <div class="media__image icon-container">
-                <img src="./images/kamole -logos.jpeg" class="icon" alt="" />
-              </div>
-              <div class="media__body">
-                <h3 class="media__title quote__author">John Smith</h3>
-                <p class="quote__organization">ABC Company</p>
-              </div>
+    <section class="block container" data-aos="zoom-in">
+      <header class="block__header">
+        <h2>What our people are Saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sed eius
+          ad odit mollitia? Et dignissimos quam quod modi cupiditate.
+        </p>
+      </header>
+      <div class="card testimonial">
+        <div class="grid grid--1x2">
+          <div class="testimonial__image">
+            <img src="images/kamole -logos_black.png" alt="" />
+            <div class="icon-container icon-container--accent">
+              <span class="icon icon--small"></span>
             </div>
           </div>
-        </blockquote>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ad
+              ab at perspiciatis officiis repellendus error, enim facere
+              pariatur obcaecati?
+            </p>
+            <div>
+              <div class="media">
+                <div class="media__image icon-container">
+                  <img src="./images/kamole -logos.jpeg" class="icon" alt="" />
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">John Smith</h3>
+                  <p class="quote__organization">ABC Company</p>
+                </div>
+              </div>
+            </div>
+          </blockquote>
+        </div>
       </div>
-    </div>
+    </section>
 
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
@@ -187,5 +206,9 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
