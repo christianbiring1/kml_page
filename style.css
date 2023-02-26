@@ -409,8 +409,8 @@ a {
 
 /* Blocks */
 .block {
-  --padding-vertical: 6rem;
-  padding: var(--padding-vertical) 2rem;
+  --padding-vertical: 3rem;
+  padding: var(--padding-vertical) 1rem;
 }
 
 .block__header {
@@ -590,4 +590,34 @@ a {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
+}
+
+/* Media */
+
+.media {
+  display: flex;
+}
+
+.media__grid {
+  gap: 2.5rem;
+}
+
+.media__block {
+  padding: 2rem 1rem;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+margin: 0 2rem;
+}
+
+.media__solution {
+  width: 100%;
+}
+
+.media__block .block__header {
+  margin: 0 0 12rem;
 }
